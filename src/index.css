@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -10,6 +11,11 @@ body {
   margin: 0;
   min-height: 100%;
   color: #18509b;
+  font-family: 'Lora', serif;
+}
+
+button {
+  font-family: 'Lora', serif;
 }
 
 h1 {
@@ -17,6 +23,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -49,6 +56,10 @@ li {
 }
 
 .rules-area {
+  padding: 0.5rem;
+}
+
+.scores-area {
   padding: 0.5rem;
 }
 
@@ -88,4 +99,30 @@ li {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+/***** Stopwatch *****/
+
+.timer-btn {
+  background-color: #18509b;
+  color: #f1f1f1;
+  padding: 1rem;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.stopwatch {
+  padding: 0.5rem;
+}
+
+.stopwatch__display {
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+.stopwatch__history {
+  margin-top: 15px;
+}
+
+li:last-child {
+  display: none;
 }
